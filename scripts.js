@@ -1,3 +1,5 @@
+// Solutions https://eloquentjavascript.net/code
+
 // 2.37
 
 let loopingATriangle = function (triangleSize) {
