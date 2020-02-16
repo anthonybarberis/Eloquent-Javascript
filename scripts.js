@@ -30,7 +30,7 @@ let chessboard = function (gridSize) {
             var pattern = "# ";
         }
         board += pattern.repeat(gridSize/2);
-        board += '\n'
+        board += '\n';
     }
     console.log(board)
 }
