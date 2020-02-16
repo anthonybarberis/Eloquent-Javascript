@@ -22,12 +22,15 @@ let fizzBuzz = function () {
 }
 
 let chessboard = function (gridSize) {
+    let board = "";
     for (let rowNum = 0; rowNum < gridSize; rowNum++) {
         if (rowNum % 2 == 0) {
             var pattern = " #";
         } else {
             var pattern = "# ";
         }
-        console.log(pattern.repeat(gridSize/2))
-    }    
+        board += pattern.repeat(gridSize/2);
+        board += '\n'
+    }
+    console.log(board)
 }
