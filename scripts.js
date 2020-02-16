@@ -20,3 +20,14 @@ let fizzBuzz = function () {
         }
     }
 }
+
+let chessboard = function (gridSize) {
+    for (let rowNum = 0; rowNum < gridSize; rowNum++) {
+        if (rowNum % 2 == 0) {
+            var pattern = " #";
+        } else {
+            var pattern = "# ";
+        }
+        console.log(pattern.repeat(gridSize/2))
+    }    
+}
