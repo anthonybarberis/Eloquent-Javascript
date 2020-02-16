@@ -1,14 +1,14 @@
 // 2.37
 
-let loopingATriangle = function () {
-    let triangle = '#######';
+let loopingATriangle = function (triangleSize) {
+    let triangle = '#'.repeat(triangleSize);
     for (let i = 0; i < triangle.length; i++) {
         console.log(triangle.substr(0, i + 1));
     }
 }
 
-let fizzBuzz = function () {
-    for (let checkNumber = 1; checkNumber <= 100; checkNumber++) {
+let fizzBuzz = function (countTo) {
+    for (let checkNumber = 1; checkNumber <= countTo; checkNumber++) {
         if (checkNumber % 3 == 0 && checkNumber % 5 == 0) {
             console.log('FizzBuzz');
         } else if (checkNumber % 3 == 0) {
